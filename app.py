@@ -3,7 +3,7 @@ SafeSite Vision — AI-Powered PPE Compliance Detection
 Streamlit Prototype for BUas ADS-AI Block C (Human-Centered AI)
 """
 import os
-os.environ["TF_USE_LEGACY_KERAS"] = "1"
+
 
 from huggingface_hub import hf_hub_download
 
