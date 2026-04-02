@@ -2,17 +2,12 @@
 SafeSite Vision — AI-Powered PPE Compliance Detection
 Streamlit Prototype for BUas ADS-AI Block C (Human-Centered AI)
 """
-import os
-from huggingface_hub import hf_hub_download
-
-os.makedirs("models", exist_ok=True)
-hf_hub_download(repo_id="produde1080/safesite_cnn", filename="safesite_cnn.h5", local_dir="models")
-
 
 import streamlit as st
 import numpy as np
 from PIL import Image
 import time
+import os
 
 # ── Page config ──────────────────────────────────────────────────────────────
 st.set_page_config(
