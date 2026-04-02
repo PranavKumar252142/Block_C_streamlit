@@ -2,6 +2,17 @@
 SafeSite Vision — AI-Powered PPE Compliance Detection
 Streamlit Prototype for BUas ADS-AI Block C (Human-Centered AI)
 """
+import os
+from huggingface_hub import hf_hub_download
+
+MODEL_PATH = "models/safesite_cnn.keras"
+if not os.path.exists(MODEL_PATH):
+    os.makedirs("models", exist_ok=True)
+    hf_hub_download(
+        repo_id="produde1080/safesite_cnn/",
+        filename="safesite_cnn.keras",
+    )
+
 
 import streamlit as st
 import numpy as np
