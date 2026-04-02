@@ -3,6 +3,8 @@ SafeSite Vision — AI-Powered PPE Compliance Detection
 Streamlit Prototype for BUas ADS-AI Block C (Human-Centered AI)
 """
 import os
+os.environ["TF_USE_LEGACY_KERAS"] = "1"
+
 from huggingface_hub import hf_hub_download
 
 MODEL_PATH = "models/safesite_cnn.keras"
@@ -18,7 +20,6 @@ import streamlit as st
 import numpy as np
 from PIL import Image
 import time
-import os
 
 # ── Page config ──────────────────────────────────────────────────────────────
 st.set_page_config(
