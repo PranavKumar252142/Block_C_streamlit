@@ -6,7 +6,7 @@ import os
 from huggingface_hub import hf_hub_download
 
 os.makedirs("models", exist_ok=True)
-hf_hub_download(repo_id="produde1080/safesite_cnn", filename="safesite_cnn.keras", local_dir="models")
+hf_hub_download(repo_id="produde1080/safesite_cnn", filename="safesite_cnn.h5", local_dir="models")
 
 
 import streamlit as st
