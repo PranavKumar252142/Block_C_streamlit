@@ -1,6 +1,0 @@
-tensorflow-cpu==2.10.0
-streamlit
-pillow
-matplotlib
-numpy<2
-huggingface_hub
